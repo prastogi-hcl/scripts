@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Health check script for Ubuntu VM
+# Health check script for Linux VM
 
 # Check CPU usage
 echo "Checking CPU usage..."
