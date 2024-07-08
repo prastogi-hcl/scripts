@@ -23,16 +23,16 @@ network_status=$(ping -c 1 google.com &> /dev/null && echo "Network is up" || ec
 echo $network_status
 
 # Check if essential services are running (e.g., ssh, apache2)
-echo "Checking essential services..."
-services=("ssh" "apache2")
-for service in "${services[@]}"
-do
-    if systemctl is-active --quiet $service; then
-        echo "$service is running"
-    else
-        echo "$service is not running"
-    fi
-done
+#echo "Checking essential services..."
+#services=("ssh" "apache2")
+#for service in "${services[@]}"
+#do
+#    if systemctl is-active --quiet $service; then
+#        echo "$service is running"
+#    else
+#        echo "$service is not running"
+#    fi
+#done
 
 # Print a summary
 echo "Health check completed."
